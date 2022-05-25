@@ -1,0 +1,38 @@
+<html>
+  <style>
+    button{
+      color: ;
+    }
+
+    button.red {
+      color: ;
+    }
+  </style>
+
+<body>
+
+<h1>HTML DOM Events</h1>
+<h2>The onclick Event</h2>
+
+<button id="demo" onclick="myFunction(1)" >Click this text to change the color.</button>
+
+<script>
+var count =0;
+function myFunction(x) {
+  var x;
+  if (x == 1) {
+    count=count+1;
+  }
+  if (count == 1) {
+    document.getElementById("demo").style.color="red";
+  }
+  else if (count == 2) {
+    document.getElementById("demo").style.color="black";
+    count=0;
+  }
+}
+
+</script>
+
+</body>
+</html>
